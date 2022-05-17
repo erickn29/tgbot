@@ -14,11 +14,11 @@ from .currency import get_currency
 async def command_start(message: types.Message):
     if message.from_user.first_name:
         await bot.send_message(message.from_user.id,
-                                   f'Д, {message.from_user.first_name}, чем могу помочь?',
+                                   f'Привет, {message.from_user.first_name}, чем могу помочь?',
                                reply_markup=kb_client)
     else:
         await bot.send_message(message.from_user.id,
-                                   f'Хай, чем могу помочь?')
+                                   f'Добрый день, чем могу помочь?')
 
 ############################## ПОГОДА ################################
 
